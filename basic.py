@@ -11,4 +11,4 @@ sum = 0
 for x in finalList:
     sum += x
 avg = sum / len(finalList)
-print("The total is %s, and the average is %s" % (str(sum), str(avg)))
+print("The total is %s, and the average is %s." % (sum, avg))
