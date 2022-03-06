@@ -1,4 +1,24 @@
-print('Hello 世界! ' * 3)
+intro = 'Hello 世界'
+print(intro)
+print(intro[0:5]) # The colon can be omitted
+print(intro[0::2]) # Third number is the step
+print(intro[::-1]) # Reverse like this
+print((intro + " ") * 3)
+
+words = intro.split(" ")
+print("There are %d words in '%s'" % (len(words), intro))
+
+if words[0] == 'Hello' and words[1] == '世界': # Use "and"
+    print("Looks good!")
+elif words[0] == "Goodbye":
+    print("Hmm...")
+else:
+    print("Failure!")
+
+if "世界" in words: # Contains
+    print("Yes!")
+else:
+    print("Sorry, no...")
 
 myList = [10 ** 3, 20, 30] # Two asterisks represents powers
 myList.append(1)
@@ -11,4 +31,10 @@ sum = 0
 for x in finalList:
     sum += x
 avg = sum / len(finalList)
-print("The total is %s, and the average is %s." % (sum, avg))
+print("The total is %d, and the average is %f." % (sum, avg))
+
+# Object equality check
+if myList is finalList:
+    print("One and them same instance")
+else:
+    print("Not the same instance")
