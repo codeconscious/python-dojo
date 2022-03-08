@@ -33,6 +33,17 @@ for x in finalList:
 avg = sum / len(finalList)
 print("The total is %d, and the average is %f." % (sum, avg))
 
+for n in range(5, 10):
+    print(n)
+
+# While loops can have else!
+count = 0
+while (count < 4): # Prints 0 to 3
+    print(count)
+    count += 1
+else: # This is not hit if "break" is used
+    print("All done!")
+
 # Object equality check
 if myList is finalList:
     print("One and them same instance")
