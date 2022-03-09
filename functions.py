@@ -1,4 +1,4 @@
-class Tools:
+class ExponentCalculator:
     def __init__(self, base):
         self.base = base
 
@@ -15,6 +15,6 @@ class Tools:
             result *= customBase
         print("%s to the %sth power is %s" % (customBase, exponent, result))
 
-tools = Tools(5)
-tools.exponents(3)
-tools.exponentsWithBase(2, 10)
+calcFive = ExponentCalculator(5)
+calcFive.exponents(3)
+calcFive.exponentsWithBase(2, 20)
