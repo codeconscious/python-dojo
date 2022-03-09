@@ -15,6 +15,6 @@ class ExponentCalculator:
             result *= customBase
         print("%s to the %sth power is %s" % (customBase, exponent, result))
 
-calcFive = ExponentCalculator(5)
-calcFive.exponents(3)
-calcFive.exponentsWithBase(2, 20)
+# calcFive = ExponentCalculator(5)
+# calcFive.exponents(3)
+# calcFive.exponentsWithBase(2, 20)

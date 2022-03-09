@@ -1,3 +1,5 @@
+
+
 intro = 'Hello 世界'
 print(intro)
 print(intro[0:5]) # The colon can be omitted
@@ -49,3 +51,21 @@ if myList is finalList:
     print("One and them same instance")
 else:
     print("Not the same instance")
+
+
+# Import style 1
+import functions
+calcTen = functions.ExponentCalculator(10)
+calcTen.exponents(3)
+calcTen.exponentsWithBase(2, 20)
+
+# Import style 2
+from functions import ExponentCalculator # Or: *
+calc20 = ExponentCalculator(20)
+calc20.exponents(4)
+
+# Fun fact: Imports can be set via conditionals too
+# if visual_mode:
+#     import draw_visual as draw
+# else:
+#     import draw_textual as draw
