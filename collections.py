@@ -11,6 +11,7 @@ xmen = {}
 xmen["cyclops"] = XPerson("Cyclops", "Scott Summers", "optic blasts")
 xmen["magneto"] = XPerson("Magneto", "Erik Lehnsherr", "magnetism")
 xmen["jubilee"] = XPerson("Jubilee", "Jubilation Lee", "pyrotechnic energy blasts")
+xmen["storm"] = XPerson("Storm", "Ororo Munroe", "weather manipulation")
 del(xmen["magneto"]) # Or: xmen.pop("magneto")
 for x, y in xmen.items():
     print(y.describe())
