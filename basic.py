@@ -69,3 +69,28 @@ calc20.exponents(4)
 #     import draw_visual as draw
 # else:
 #     import draw_textual as draw
+
+
+# Lambdas
+sum = lambda x,y : x * y
+print(sum(3, 4))
+
+
+# Params (as in C#)
+def paramsTest(first, second, third, *therest):
+    print("First: %s" %(first))
+    print("Second: %s" %(second))
+    print("Third: %s" %(third))
+    print("And all the rest... %s" %(list(therest)))
+
+paramsTest(1, 2, 3, 4, 5, 10, 100)
+
+
+# Send args by keyword
+def math_operation(first, second, third, **options):
+    if options.get("action") == "sum":
+        print("The sum is: %d" %(first + second + third))
+    if options.get("number") == "first":
+        return first
+result = math_operation(1, 2, 3, action = "sum", number = "first")
+print("Result: %d" %(result))
