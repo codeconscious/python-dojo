@@ -1,12 +1,12 @@
 import random
 
 def lottery():
-    # returns 6 numbers between 1 and 40
+    # Returns 6 numbers between 1 and 40
     for i in range(6):
         yield random.randint(1, 40)
 
-    # returns a 7th number between 1 and 15
-    yield random.randint(1, 15)
+    # Returns a 7th random number
+    yield random.randint(-20, -1)
 
 for random_number in lottery():
-    print(" - Next number is: %d" % (random_number))
+    print("• %d" % (random_number))

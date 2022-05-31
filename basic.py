@@ -1,33 +1,33 @@
+# Syntax cheatsheet
 
+greeting = 'Hello 世界'
+print(greeting)
+print(greeting[0:5]) # The colon can be omitted
+print(greeting[0::2]) # Third number is the step
+print(greeting[::-1]) # Reverse the order
+print((greeting + " ") * 3) # In triplicate
 
-intro = 'Hello 世界'
-print(intro)
-print(intro[0:5]) # The colon can be omitted
-print(intro[0::2]) # Third number is the step
-print(intro[::-1]) # Reverse like this
-print((intro + " ") * 3)
-
-words = intro.split(" ")
-print("There are %d words in '%s'" % (len(words), intro))
+words = greeting.split(" ")
+print("There are %d words in '%s'" % (len(words), greeting))
 
 if words[0] == 'Hello' and words[1] == '世界': # Use "and"
-    print("Looks good!")
+    print("Expected string found")
 elif words[0] == "Goodbye":
-    print("Hmm...")
+    print("Error: Unexpected string")
 else:
     print("Failure!")
 
 if "世界" in words: # Contains
-    print("Yes!")
+    print("Found!")
 else:
-    print("Sorry, no...")
+    print("Sorry, not found...")
 
-myList = [10 ** 3, 20, 30] # Two asterisks represents powers
+myList = [10 ** 3, 20, 30] # Two asterisks represents powers, so that's 10^3
 myList.append(1)
 myList.append(2)
 myList.append(3)
 myOtherList = [-3, 4] * 10 # You can repeat list contents too.
-finalList = myList + myOtherList
+finalList = myList + myOtherList # Combining lists
 
 sum = 0
 for x in finalList:
@@ -36,15 +36,16 @@ avg = sum / len(finalList)
 print("The total is %d, and the average is %f." % (sum, avg))
 
 for n in range(5, 10):
-    print(n)
+    print(n) # Prints 5 to 9
 
-# While loops can have else!
+# While loops can have an else statement.
 count = 0
 while (count < 4): # Prints 0 to 3
     print(count)
     count += 1
-else: # This is not hit if "break" is used
-    print("All done!")
+else: # Note: This is not hit if "break" is used
+    print("Counting complete!")
+
 
 # Object equality check
 if myList is finalList:
