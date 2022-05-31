@@ -1,5 +1,5 @@
 class ExponentCalculator:
-    def __init__(self, base):
+    def __init__(self, base): # ctor
         self.base = base
 
     def exponents(self, exponent):
