@@ -1,24 +1,26 @@
 import random
 
-# Return 7 random numbers
+# Return 10 random numbers
 def lottery():
-    for i in range(6):
+    for i in range(9):
         yield random.randint(1, 40)
     yield random.randint(-20, -1)
 
+lottery_output = ""
 for random_number in lottery():
-    print("• %d" % (random_number))
+    lottery_output += ("%d  " % (random_number))
+print(lottery_output)
 
 
-def char_generator(count):
+# Print 75 letters, separating them into groups of 5 for legibility.
+def letter_generator(count):
     letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     for i in range(count):
         yield letters[random.randint(0, 25)]
 
-# Print 75 letters, separating them into groups of 5 for legibility.
-output = ""
-for index, letter in enumerate(char_generator(75)): # Use enumerate to get the index
-    output += letter
+randomLetters = ""
+for index, letter in enumerate(letter_generator(75)): # Use enumerate() to get the index
+    randomLetters += letter
     if (index % 5 == 4):
-        output += " "
-print(output)
+        randomLetters += " "
+print(randomLetters)
